@@ -39,7 +39,7 @@ topbalance
 │   │   │       ├── dto
 │   │   │       ├── mapper
 │   │   │       ├── service
-│   │   │       └── KhtAcademyApplication
+│   │   │       └── WishTreeApplication
 │   │   ├── resources
 │   │       ├── mappers
 │   │       ├── static
