@@ -27,13 +27,13 @@ KHT Academy는 Java Spring Boot를 기반으로 한 웹 애플리케이션 프�
 
 ## 디렉토리 구조
 ```
-khtAcademy
+topbalance
 ├── .idea
 ├── .mvn
 ├── src
 │   ├── main
 │   │   ├── java
-│   │   │   └── com.kh.khtAcademy
+│   │   │   └── com.topBalance.wishTree
 │   │   │       ├── config
 │   │   │       ├── controller
 │   │   │       ├── dto
@@ -80,22 +80,22 @@ khtAcademy
     <td><img src="https://via.placeholder.com/100" alt="팀원이미지4" /></td>
   </tr>
   <tr>
-    <td>팀원1 김경문</td>
-    <td>팀원2 이다경</td>
-    <td>팀원3 이성호</td>
-    <td>팀원4 조규식</td>
+    <td>김경문</td>
+    <td>이다경</td>
+    <td>이성호</td>
+    <td>조규식</td>
   </tr>
   <tr>
     <td>로그인/회원가입</td>
     <td>게임결과</td>
-    <td>인게입</td>
+    <td>인게임</td>
     <td>메인페이지</td>
   </tr>
   <tr>
     <td>깃허브</td>
-    <td>PPT 정리</td>
-    <td>노션 정리</td>
-    <td>readme 정리</td>
+    <td>PPT정리</td>
+    <td>노션정리</td>
+    <td>readme/코드정리</td>
   </tr>
 </table>
 
@@ -166,5 +166,8 @@ khtAcademy
 
 프로젝트와 관련하여 문의 사항이 있으면 아래 이메일로 연락주세요.
 
-- Email: [your_email@example.com](mailto:your_email@example.com)
+김경문 Email: [hodolskm@gmail.com](mailto:hodolskm@gmail.com)
+이다경 Email: [dakyung96@gmail.com](mailto:dakyung96@gmail.com)
+이성호 Email: [sarden030@gmail.com](mailto:sarden030@gmail.com)
+조규식 Email: [wlrncom@gmail.com](mailto:wlrncom@gmail.com)
 
