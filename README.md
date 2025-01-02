@@ -105,7 +105,7 @@ topbalance
 
 1. 이 저장소를 클론합니다.
    ```bash
-   git clone <repository_url>
+   git clone <[repository_url](https://github.com/mochoping/topbalanceteam.git)>
    ```
 
 2. 프로젝트 디렉토리로 이동합니다.
