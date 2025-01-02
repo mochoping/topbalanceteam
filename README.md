@@ -80,10 +80,10 @@ topbalance
     <td width=300px><img src="https://github.com/mochoping/topbalanceteam/blob/main/%ED%98%B8%EB%B0%95.jpg" /></td>
   </tr>
   <tr>
-    <td>김경문</td>
-    <td>이다경</td>
-    <td>이성호</td>
-    <td>조규식</td>
+    <th>김경문</th>
+    <th>이다경</th>
+    <th>이성호</th>
+    <th>조규식</th>
   </tr>
   <tr>
     <td>로그인/회원가입</td>
