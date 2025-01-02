@@ -74,10 +74,10 @@ topbalance
 
 <table>
   <tr>
-    <td><img src="https://via.placeholder.com/100" alt="팀원이미지1" /></td>
-    <td><img src="https://github.com/mochoping/topbalanceteam/blob/main/%EA%B0%95%EC%95%84%EC%A7%80.jpg"  /></td>
-    <td><img src="https://github.com/mochoping/topbalanceteam/blob/main/%EA%B3%A0%EC%96%91%EC%9D%B4.jpg" /></td>
-    <td><img src="https://github.com/mochoping/topbalanceteam/blob/main/%ED%98%B8%EB%B0%95.jpg" /></td>
+    <td img size=cover><img src="https://github.com/mochoping/topbalanceteam/blob/main/%EC%BA%90%EB%A6%AD%EA%B3%A0%EC%96%91.jpg" /></td>
+    <td img size=cover><img src="https://github.com/mochoping/topbalanceteam/blob/main/%EA%B0%95%EC%95%84%EC%A7%80.jpg"  /></td>
+    <td img size=cover><img src="https://github.com/mochoping/topbalanceteam/blob/main/%EA%B3%A0%EC%96%91%EC%9D%B4.jpg" /></td>
+    <td img size=cover><img src="https://github.com/mochoping/topbalanceteam/blob/main/%ED%98%B8%EB%B0%95.jpg" /></td>
   </tr>
   <tr>
     <td>김경문</td>
