@@ -167,7 +167,10 @@ topbalance
 프로젝트와 관련하여 문의 사항이 있으면 아래 이메일로 연락주세요.
 
 김경문 Email: [hodolskm@gmail.com](mailto:hodolskm@gmail.com)
+<br>
 이다경 Email: [dakyung96@gmail.com](mailto:dakyung96@gmail.com)
+<br>
 이성호 Email: [sarden030@gmail.com](mailto:sarden030@gmail.com)
+<br>
 조규식 Email: [wlrncom@gmail.com](mailto:wlrncom@gmail.com)
 
