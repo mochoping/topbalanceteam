@@ -110,7 +110,7 @@ topbalance
 
 2. 프로젝트 디렉토리로 이동합니다.
    ```bash
-   cd khtAcademy
+   cd topbalance
    ```
 
 3. 필요한 의존성을 설치합니다.
