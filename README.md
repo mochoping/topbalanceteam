@@ -75,7 +75,7 @@ topbalance
 <table>
   <tr>
     <td><img src="https://via.placeholder.com/100" alt="팀원이미지1" /></td>
-    <td><img src="[https://via.placeholder.com/100](https://github.com/mochoping/topbalanceteam/blob/main/%EA%B0%95%EC%95%84%EC%A7%80.jpg)" alt="팀원이미지2" /></td>
+    <td><img src="https://github.com/mochoping/topbalanceteam/blob/main/%EA%B0%95%EC%95%84%EC%A7%80.jpg"  /></td>
     <td><img src="https://via.placeholder.com/100" alt="팀원이미지3" /></td>
     <td><img src="https://via.placeholder.com/100" alt="팀원이미지4" /></td>
   </tr>
