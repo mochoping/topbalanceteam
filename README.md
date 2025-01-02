@@ -80,21 +80,21 @@ khtAcademy
     <td><img src="https://via.placeholder.com/100" alt="팀원이미지4" /></td>
   </tr>
   <tr>
-    <td>팀원1</td>
-    <td>팀원2</td>
-    <td>팀원3</td>
-    <td>팀원4</td>
+    <td>팀원1 김경문</td>
+    <td>팀원2 이다경</td>
+    <td>팀원3 이성호</td>
+    <td>팀원4 조규식</td>
   </tr>
   <tr>
-    <td>회원가입</td>
-    <td>게시판</td>
-    <td>메인</td>
-    <td>마이페이지</td>
+    <td>로그인/회원가입</td>
+    <td>게임결과</td>
+    <td>인게입</td>
+    <td>메인페이지</td>
   </tr>
   <tr>
     <td>깃허브</td>
+    <td>PPT 정리</td>
     <td>노션 정리</td>
-    <td>문서 정리</td>
     <td>readme 정리</td>
   </tr>
 </table>
