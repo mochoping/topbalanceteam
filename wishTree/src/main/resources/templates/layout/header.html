@@ -13,9 +13,11 @@
         <div class="close-icon" onclick="toggleMenu(false)">&times;</div>
         <ul>
             <li><a href="/">메인화면</a></li>
-            <li><a href="#">할 말 있어요</a></li>
-            <li><a href="find-id">아이디 찾기</a></li>
-            <li><a href="find-password">비밀번호 찾기</a></li>
+            <li><a href="/balancegame">Start Game</a></li>
+            <li><a href="/bamboo">BAMBOO</a></li>
+            <li><a href="/gameresult">게임 결과</a></li>
+            <li><a th:if="${loggedInUser == null}" href="find-id">아이디 찾기</a></li>
+            <li><a th:if="${loggedInUser == null}" href="find-password">비밀번호 찾기</a></li>
             <li><a th:if="${loggedInUser == null}" href="/register">회원가입</a></li>
             <li><a th:if="${loggedInUser == null}" href="/login">로그인</a></li>
             <li><a th:if="${loggedInUser != null}" href="/mypage">마이페이지</a></li>
