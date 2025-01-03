@@ -25,7 +25,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            background-image: url("/images/maintree.png"); /* 배경 이미지 경로 설정 */
+            background-image: url("/img/maintree.png"); /* 배경 이미지 경로 설정 */
             background-size: cover; /* 배경 이미지를 비율 유지하며 채우기 */
             background-position: center; /* 이미지를 중앙에 배치 */
             background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
@@ -38,7 +38,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            background-image: url("/images/ranklist.png");
+            background-image: url("/img/ranklist.png");
             /* 배경 이미지를 비율 유지하며 채우기 */
             background-size: cover;
             background-position: center; /* 이미지를 중앙에 배치 */
@@ -101,9 +101,9 @@
     </style>
 </head>
 <body>
-<th:block th:replace="~{layout/header :: header}"></th:block>
 
 <div class="main-container">
+<th:block th:replace="~{layout/header :: header}"></th:block>
     <h1 class="maintext">오늘의 운세</h1>
     <div class="ranklist">
         <table>
