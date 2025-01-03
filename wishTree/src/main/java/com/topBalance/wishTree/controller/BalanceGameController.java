@@ -21,7 +21,6 @@ import java.util.Map;
 
 @Controller
 public class BalanceGameController {
-
     private GameScores gamescores;
 
     @Autowired
