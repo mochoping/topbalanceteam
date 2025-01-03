@@ -2,8 +2,10 @@ package com.topBalance.wishTree.service;
 
 
 import com.topBalance.wishTree.dto.CardType;
+import com.topBalance.wishTree.dto.User;
 import com.topBalance.wishTree.mapper.TodaysLuckMapper;
 import com.topBalance.wishTree.mapper.TodaysLunchMapper;
+import com.topBalance.wishTree.mapper.UserMapper;
 import com.topBalance.wishTree.vo.GameScores;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +17,11 @@ import java.util.Map;
 public class GameResultServiceImpl implements GameResultService {
 
     @Autowired
+    private UserMapper userMapper;
+
+    @Autowired
     private TodaysLuckMapper todaysLuckMapper;
+
     @Autowired
     private TodaysLunchMapper todaysLunchMapper;
 
@@ -189,6 +195,11 @@ public class GameResultServiceImpl implements GameResultService {
         }
 
         return answer;
+    }
+
+    @Override
+    public void updatingTotalScore(User loggedInUser, int totalScore) {
+        userMapper.updatingTotalScore(totalScore, loggedInUser.getUserId());
     }
 
 }
