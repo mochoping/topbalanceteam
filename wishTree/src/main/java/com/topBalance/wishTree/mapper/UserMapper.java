@@ -29,6 +29,8 @@ public interface UserMapper {
     User findUserById(String userId);
 
     int checkUsers(String userId);
+
+    void updatingTotalScore(int totalScore, String userId);
 }
 
 

@@ -1,6 +1,7 @@
 package com.topBalance.wishTree.service;
 
 import com.topBalance.wishTree.dto.CardType;
+import com.topBalance.wishTree.dto.User;
 import com.topBalance.wishTree.vo.GameScores;
 
 import java.util.Map;
@@ -33,4 +34,5 @@ public interface GameResultService {
 
     String getTodaysLunchPath(CardType MAX, CardType MIN);
 
+    void updatingTotalScore(User loggedInUser, int totalScore);
 }
