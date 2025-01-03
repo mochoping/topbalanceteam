@@ -18,23 +18,18 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;
-  /*
+
+    // 테스트용 함수 전체 정보 가져오기
     @Override
     public List<Map<String, Object>> getAllUsers() {
         List<User> userList = userMapper.getAllUsers();
         return userList.stream().map(user -> {
             Map<String, Object> userMap = new HashMap<>();
             userMap.put("userId", user.getUserId());
-            userMap.put("username", user.getUsername());
-            userMap.put("email", user.getEmail());
-            userMap.put("birthday", user.getBirthday());
-            userMap.put("accountBalance", user.getAccountBalance());
-            userMap.put("gender", user.getGender());
-            userMap.put("hobbies", user.getHobbies());
             return userMap;
         }).collect(Collectors.toList());
     }
-    */
+
 
     @Override
     public void insertUser(User user) {
