@@ -9,7 +9,7 @@ import java.util.Objects;
 
 public interface UserService {
     // 전체목록 조회
-   // List<Map<String, Object>> getAllUsers();
+   List<Map<String, Object>> getAllUsers();
 
     // 회원가입
 
