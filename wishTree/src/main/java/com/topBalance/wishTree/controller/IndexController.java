@@ -17,6 +17,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+
 @Controller // Spring MVC 컨트롤러로 사용되는 클래스임을 지정. 사용자 요청처리, HTML 템플릿으로 데이터 전달
 public class IndexController {
     @Autowired
@@ -24,6 +25,12 @@ public class IndexController {
     @Autowired
     private WishService wishService;
 
+    /**
+     *
+     * @param model
+     * @param session
+     * @return
+     */
     @GetMapping("/") // - 엔드포인트 html 파일에 작성한 화면을 보여줄 주소
     // HTTP GET 요청매핑. 엔드포인트에 대한 요청 처리하고 결과 반환
     public String ranksindex(Model model,  HttpSession session) { // model은 index.html에 자바로 작성한 값을 전달할 변수
@@ -57,7 +64,7 @@ public class IndexController {
 //        return "success"; //회원가입이 무사히 완료될 경우 success 페이지로 이동
 //    }
 
-    @ModelAttribute("loggedInUser")
+    @ModelAttribute("loggedInUser") //모델 데이터를 초기화하거나 뷰에 데이터를 전달
     public Object addLoggedInUser(HttpSession session) {
         return session.getAttribute("loggedInUser");
     }

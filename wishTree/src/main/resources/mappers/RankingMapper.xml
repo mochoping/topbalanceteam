@@ -5,6 +5,7 @@
 <!-- Java 어떤 파일에 sql문을 보낼지 경로 설정
     namespace 내에 mapper 경로 작성
 -->
+
 <mapper namespace="com.topBalance.wishTree.mapper.RankingMapper">
     <!-- sql문을 보낼 때 보낼 표기명 id에 작성 -->
 
