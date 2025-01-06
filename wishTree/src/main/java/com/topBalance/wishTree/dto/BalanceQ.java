@@ -15,18 +15,17 @@ public class BalanceQ {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int index;
-    private int question;
-    private boolean answerleft;
+    private int questionNumber;
+    @Setter
+    private String answerLeft;
     private int scoreS;
     private int scoreC;
     private int scoreH;
     private int scoreD;
+    private String problem;
+    private String answer;
 
-    public boolean getAnswerLeft() {
-        return answerleft;
-    }
-
-    public void setAnswerLeft(boolean answerleft) {
-        this.answerleft = answerleft;
+    public String getAnswerLeft() {
+        return answerLeft;
     }
 }

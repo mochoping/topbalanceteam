@@ -8,7 +8,7 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper {
-    //List<User> getAllUsers();
+    List<User> getAllUsers();
 
     //회원가입 - 유저저장하기
     void insertUser(User user);
@@ -29,6 +29,8 @@ public interface UserMapper {
     User findUserById(String userId);
 
     int checkUsers(String userId);
+
+    void updatingTotalScore(int totalScore, String userId);
 }
 
 

@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 import java.text.DateFormat;
+import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,5 +20,11 @@ public class Bamboo {
     private int index;
     private String userId;
     private String comment;
-    private DateFormat commentDate;
+    private Date commentDate;
+
+    public Bamboo(String userId, String comment) {
+        this.userId = userId;
+        this.comment = comment;
+        this.commentDate = new Date();
+    }
 }
