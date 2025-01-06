@@ -1,7 +1,7 @@
 <header th:fragment="header">
     <div class="navbar">
         <div class="menu-icon" id="menuIcon" onclick="toggleMenu(true)">&#9776;</div>
-        <div class="logo"><span>BestBalance</span></div>
+        <div class="logo"><span><a href="/">TopBalance</a></span></div>
         <div class="icons">
             <span class="search-icon">&#128269;</span>
             <span class="profile-icon" th:if="${loggedInUser == null}" onclick="location.href='/login'">&#128100;</span>
@@ -37,6 +37,9 @@ position: relative;}
 height: 1000px;    width: 160px;    background-color: white;
 text-decoration: none;}
 
+.logo a{
+    text-decoration: none;
+}
 </style>
 <!--
 </div>
