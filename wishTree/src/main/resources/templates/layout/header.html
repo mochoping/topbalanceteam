@@ -1,7 +1,7 @@
 <header th:fragment="header">
     <div class="navbar">
         <div class="menu-icon" id="menuIcon" onclick="toggleMenu(true)">&#9776;</div>
-        <div class="logo"><span>BestBalance</span></div>
+        <div class="logo"><a href="/">Top Balance</a></div>
         <div class="icons">
             <span class="search-icon">&#128269;</span>
             <span class="profile-icon" th:if="${loggedInUser == null}" onclick="location.href='/login'">&#128100;</span>
@@ -32,6 +32,15 @@ justify-content: space-between;    align-items: center;
 padding: 10px 16px;    background-color: white;
 border-bottom: 1px solid #ddd;    box-sizing: border-box;
 position: relative;}
+
+.navbar .logo:hover {
+    cursor : pointer;
+}
+
+.navbar .logo:visited {
+    color : black;
+    text-decoration: none;
+}
 
 .side-menu {    position: absolute;    top: 0px; left: 310px;
 height: 1000px;    width: 160px;    background-color: white;
