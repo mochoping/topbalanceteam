@@ -9,7 +9,7 @@
     <select id="todaysLuck">
         SELECT CARD_RESULT
         FROM TODAYSLUCK
-        WHERE CARD_TYPE = #{cardType}
+        WHERE CARD_TYPE = #{cardType} <!--자바에서 가져오는 cardType-->
           AND CARD_NUMBER = #{cardNumber}
     </select>
 
