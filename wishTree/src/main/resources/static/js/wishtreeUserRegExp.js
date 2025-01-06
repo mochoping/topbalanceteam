@@ -18,6 +18,8 @@ const pwResult1 = document.getElementById("pw_result1");
 const pwResult2 = document.getElementById("pw_result2");
 const nameResult = document.getElementById("name_result");
 const phoneResult = document.getElementById("phone_result");
+
+const registerButton = document.getElementById("register-button");
 //폼 제출 체크포인트
 /*
 var idDuplicateValidation = boolean(false);
@@ -28,7 +30,7 @@ var nameValidation = boolean(false);
 var phoneValidation = boolean(false);
 const validationMsg = document.getElementById("validation_result");
 */
-
+registerButton.disabled = true;
 
 //아이디 중복 확인 및 정규식 체크
     $(document).ready(function () {
@@ -45,8 +47,10 @@ const validationMsg = document.getElementById("validation_result");
             success: function (response) {
                 if (response.userExists) {
                     $('#idCheck_result').text('이미 사용중인 유저이름입니다.').css('color', 'red');
+
                 } else {
                     $('#idCheck_result').text('사용가능한 유저이름입니다.').css('color', 'green');
+                    registerButton.disabled = false;
 
                 }
             },
