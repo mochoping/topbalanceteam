@@ -30,6 +30,7 @@ var phoneValidation = false;
 
 let validationMsg = document.getElementById("validation_result");
 registerButton.disabled = true;
+let buttonResult = false;
 let form = document.getElementById("registerForm");
 
 
@@ -51,8 +52,10 @@ let form = document.getElementById("registerForm");
                     $("#userId").val('');
                 } else {
                     $('#idCheck_result').text('사용가능한 유저이름입니다.').css('color', 'green');
-                    registerButton.disabled = false;
-
+                    buttonResult = true;
+                    if(idValidation && pwValidation && pwDuplicateValidation && nameValidation && phoneValidation && buttonResult) {
+                        registerButton.disabled = false;
+                    }
                 }
             },
             error: function () {
@@ -78,6 +81,9 @@ function ExpcheckId(event){
     idResult.style.display = 'none';
     idCheckResult.style.display = 'block';
     idValidation = true;
+    if(idValidation && pwValidation && pwDuplicateValidation && nameValidation && phoneValidation && buttonResult) {
+        registerButton.disabled = false;
+    }
 }
 
 function ExpcheckPassword(event){
@@ -89,6 +95,9 @@ function ExpcheckPassword(event){
     pwResult1.className = "enabled"
     pwResult1.innerText = "사용가능한 비밀번호 입니다."
     pwValidation =true;
+    if(idValidation && pwValidation && pwDuplicateValidation && nameValidation && phoneValidation && buttonResult) {
+        registerButton.disabled = false;
+    }
 }
 
 function ExpcheckName(event){
@@ -100,6 +109,9 @@ function ExpcheckName(event){
     nameResult.className = "enabled"
     nameResult.innerText = ""
     nameValidation =true;
+    if(idValidation && pwValidation && pwDuplicateValidation && nameValidation && phoneValidation && buttonResult) {
+        registerButton.disabled = false;
+    }
 }
 function ExpcheckPhone(event){
     if (!expHpText.test(userPhone.value)){
@@ -110,6 +122,9 @@ function ExpcheckPhone(event){
     phoneResult.className = "enabled"
     phoneResult.innerText = ""
     phoneValidation = true;
+    if(idValidation && pwValidation && pwDuplicateValidation && nameValidation && phoneValidation && buttonResult) {
+        registerButton.disabled = false;
+    }
 }
 
 // 비밀번호 더블체크
@@ -118,13 +133,9 @@ function checkingPw(event) {
         pwResult2.className = "enabled";
         pwResult2.innerText = "비밀번호가 일치합니다.";
         pwDuplicateValidation = true;
-        if( idValidation
-            &&pwValidation
-            &&nameValidation
-            &&phoneValidation ){
-            return false;
+        if(idValidation && pwValidation && pwDuplicateValidation && nameValidation && phoneValidation && buttonResult) {
+            registerButton.disabled = false;
         }
-
 
     }
     pwResult2.className = "unabled";
