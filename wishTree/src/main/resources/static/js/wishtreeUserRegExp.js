@@ -18,16 +18,19 @@ const pwResult1 = document.getElementById("pw_result1");
 const pwResult2 = document.getElementById("pw_result2");
 const nameResult = document.getElementById("name_result");
 const phoneResult = document.getElementById("phone_result");
+
+const registerButton = document.getElementById("register-button");
 //폼 제출 체크포인트
-/*
-var idDuplicateValidation = boolean(false);
-var idValidation = boolean(false);
-var pwValidation = boolean(false);
-var pwDuplicateValidation = boolean(false);
-var nameValidation = boolean(false);
-var phoneValidation = boolean(false);
-const validationMsg = document.getElementById("validation_result");
-*/
+
+var idValidation = false;
+var pwValidation = false;
+var pwDuplicateValidation = false;;
+var nameValidation = false;
+var phoneValidation = false;
+
+let validationMsg = document.getElementById("validation_result");
+registerButton.disabled = true;
+let form = document.getElementById("registerForm");
 
 
 //아이디 중복 확인 및 정규식 체크
@@ -45,8 +48,10 @@ const validationMsg = document.getElementById("validation_result");
             success: function (response) {
                 if (response.userExists) {
                     $('#idCheck_result').text('이미 사용중인 유저이름입니다.').css('color', 'red');
+                    $("#userId").val('');
                 } else {
                     $('#idCheck_result').text('사용가능한 유저이름입니다.').css('color', 'green');
+                    registerButton.disabled = false;
 
                 }
             },
@@ -89,7 +94,7 @@ function ExpcheckPassword(event){
 function ExpcheckName(event){
     if (!expNameText.test(userName.value)){
         nameResult.className = "unabled"
-        nameResult.innerText = "이름은 최소 2자 이상 필요합니다.."
+        nameResult.innerText = "이름은 한글로 최소 2자 이상 필요합니다."
         return;
     }
     nameResult.className = "enabled"
@@ -113,7 +118,14 @@ function checkingPw(event) {
         pwResult2.className = "enabled";
         pwResult2.innerText = "비밀번호가 일치합니다.";
         pwDuplicateValidation = true;
-        return;
+        if( idValidation
+            &&pwValidation
+            &&nameValidation
+            &&phoneValidation ){
+            return false;
+        }
+
+
     }
     pwResult2.className = "unabled";
     pwResult2.innerText = "비밀번호가 일치하지 않습니다.";
@@ -124,15 +136,13 @@ function resetRepeatPassword(){
 }
 
 function acceptSubmit(){
-    if(idDuplicateValidation
-        &&idValidation
+    if( idValidation
         &&pwValidation
-        &&pwDuplicateValidation
         &&nameValidation
         &&phoneValidation ){
-        return true
+        form.submit()
+        return;
     }
     validationMsg.className='unabled'
     validationMsg.innerText= "서식이 달라 제출에 어려움이 있습니다."
-    return false
 }

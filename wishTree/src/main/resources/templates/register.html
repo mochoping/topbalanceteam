@@ -23,9 +23,9 @@
     <!-- Header -->
     <th:block th:replace="~{layout/header :: header}"></th:block>
     <H1>회원가입</H1>
-    <form action="/register-success" method="post" id="checkRegExp" class="register-content"
+    <form action="/register-success" method="post" id="registerForm" class="register-content"
           enctype="application/x-www-form-urlencoded"
-          onsubmit="acceptSubmit()"> <!-- 제출조건-->
+          > <!-- 제출조건 onsubmit="acceptSubmit()"-->
         <div>
             <label for="userId">아이디</label><br>
             <input type="text" id="userId" name="userId" required>
@@ -63,7 +63,7 @@
             <input type="radio" id="female" name="userGender" value="FEMALE">여성
         </label>
         <br><br>
-        <button>가입하기</button>
+        <button id="register-button" type="button" onclick="acceptSubmit()">가입하기</button>
         <p id="validation_result"></p>
     </form>
 
