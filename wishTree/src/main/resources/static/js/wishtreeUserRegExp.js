@@ -36,7 +36,7 @@ let form = document.getElementById("registerForm");
 
 //아이디 중복 확인 및 정규식 체크
     $(document).ready(function () {
-    $('#checkidButton').click(function () {
+    $('#userId').blur(function () {
         const userId = $('#userId').val();
         if (!userId) {
             alert('아이디는 공백이 될 수 없습니다.');
@@ -136,7 +136,7 @@ function checkingPw(event) {
         if(idValidation && pwValidation && pwDuplicateValidation && nameValidation && phoneValidation && buttonResult) {
             registerButton.disabled = false;
         }
-
+        return;
     }
     pwResult2.className = "unabled";
     pwResult2.innerText = "비밀번호가 일치하지 않습니다.";
@@ -145,6 +145,7 @@ function checkingPw(event) {
 function resetRepeatPassword(){
     userRepw.value = null;
 }
+
 
 function acceptSubmit(){
     if( idValidation

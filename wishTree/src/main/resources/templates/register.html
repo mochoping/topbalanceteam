@@ -28,19 +28,18 @@
           > <!-- 제출조건 onsubmit="acceptSubmit()"-->
         <div>
             <label for="userId">아이디</label><br>
-            <input type="text" id="userId" name="userId" required>
+            <input type="text" id="userId" name="userId" onblur="ExpcheckId(event)" required>
             <p id="id_result"></p>
             <p id="idCheck_result"></p>
-            <button id="checkidButton" type="button" onclick="ExpcheckId(event)">중복 확인</button>
         </div>
         <br><br>
         <label for="userPassword">비밀번호</label>
         <input type="password" id="userPassword" name="userPassword"
-               onclick="resetRepeatPassword(event)"
                onblur="ExpcheckPassword(event)"required>
         <p id="pw_result1"></p>
         <label for="userRepeatPassword">비밀번호확인</label>
-        <input type="password" id="userRepeatPassword" name="userRepeatPassword" onblur="checkingPw(event)">
+        <input type="password" id="userRepeatPassword" name="userRepeatPassword"
+               onclick="resetRepeatPassword(event)" onblur="checkingPw(event)">
         <p id="pw_result2"></p>
         <br><br>
         <label for="userName">이름</label>
