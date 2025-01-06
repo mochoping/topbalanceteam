@@ -100,6 +100,7 @@ public class BalanceGameController {
         CardType MIN = gameResultService.getMinCategory(gamescores);
         String todaysLunch = gameResultService.todaysLunch(MAX, MIN);
         model.addAttribute("todaysLunch", todaysLunch);
+
         // MAX 와 MIN에 따른 점심메뉴 이미지 경로 찾기 및 model에 넣기
         String lunchPath = gameResultService.getTodaysLunchPath(MAX, MIN);
         model.addAttribute("lunchPath", lunchPath);
