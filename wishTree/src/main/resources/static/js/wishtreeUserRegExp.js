@@ -113,6 +113,7 @@ function ExpcheckName(event){
     if (!expNameText.test(userName.value)){
         nameResult.className = "unabled"
         nameResult.innerText = "이름은 한글로 최소 2자 이상 필요합니다."
+        registerButton.disabled = false;
         return;
 
     }
