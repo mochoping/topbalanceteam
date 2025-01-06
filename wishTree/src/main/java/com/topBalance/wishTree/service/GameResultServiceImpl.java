@@ -37,7 +37,8 @@ public class GameResultServiceImpl implements GameResultService {
     //게임 스코어 총합
     @Override
     public int totalScore(GameScores gameScores) {
-        return gameScores.getSpadeScore() + gameScores.getCloverScore() + gameScores.getHeartScore() + gameScores.getDiamondScore();
+        return gameScores.getSpadeScore() + gameScores.getCloverScore()
+                + gameScores.getHeartScore() + gameScores.getDiamondScore();
     }
 
     //트럼프카드 사진 경로 점수대로 가져오는 설정
@@ -127,7 +128,8 @@ public class GameResultServiceImpl implements GameResultService {
         allScores.put(gameScores.getHeartScore(), CardType.HEART);
         allScores.put(gameScores.getDiamondScore(), CardType.DIAMOND);
 
-        int MinValue = Math.min(Math.min(gameScores.getSpadeScore(), gameScores.getCloverScore()), Math.min(gameScores.getHeartScore(), gameScores.getDiamondScore()));
+        int MinValue = Math.min(Math.min(gameScores.getSpadeScore(), gameScores.getCloverScore()),
+                Math.min(gameScores.getHeartScore(), gameScores.getDiamondScore()));
         System.out.println("Min : " + MinValue);
         return allScores.get(MinValue);
 
@@ -151,7 +153,9 @@ public class GameResultServiceImpl implements GameResultService {
         allScores.put(gameScores.getHeartScore(), CardType.HEART);
         allScores.put(gameScores.getDiamondScore(), CardType.DIAMOND);
 
-        int MaxValue = Math.max(Math.max(gameScores.getSpadeScore(), gameScores.getCloverScore()), Math.max(gameScores.getHeartScore(), gameScores.getDiamondScore()));
+        //Math.max() 메서드는 매개변수로 주어진 숫자중 가장 큰 수를 반환
+        int MaxValue = Math.max(Math.max(gameScores.getSpadeScore(), gameScores.getCloverScore()),
+                Math.max(gameScores.getHeartScore(), gameScores.getDiamondScore()));
         System.out.println("Max : " + MaxValue);
         return allScores.get(MaxValue);
 //        Map<Integer, CardType> treemap = new TreeMap<>(new Comparator<Integer>() {
