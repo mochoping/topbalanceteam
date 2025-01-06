@@ -16,10 +16,6 @@ public class WishServiceImple implements WishService {
     @Autowired
     private WishMapper wishMapper;
 
-    /**
-     *
-     * @return
-     */
     @Override
     public List<Map<String, Object>> getSevenWish() {
         List<WishTree> wishList = wishMapper.getSevenWish();
@@ -33,11 +29,6 @@ public class WishServiceImple implements WishService {
         }).collect(Collectors.toList());
     }
 
-    /**
-     *
-     * @param userWish
-     * @return
-     */
     @Override
     public String selectWish(String userWish) {
         return wishMapper.selectWish(userWish);
