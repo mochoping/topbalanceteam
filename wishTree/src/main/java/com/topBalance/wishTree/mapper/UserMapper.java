@@ -8,6 +8,7 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper {
+    //전체정보 - 테스트용
     List<User> getAllUsers();
 
     //회원가입 - 유저저장하기
@@ -27,8 +28,10 @@ public interface UserMapper {
 
     //유저 아이디로 전체 정보 호출 - 유저 정보 불러오기시 필요
     User findUserById(String userId);
+
     // 회원가입시 중복 정보 확인용
     int checkUsers(String userId);
+
     // 게임 점수 업데이트용
     void updatingTotalScore(int totalScore, String userId);
 }
