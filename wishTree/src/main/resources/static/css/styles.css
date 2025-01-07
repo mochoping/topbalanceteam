@@ -205,7 +205,7 @@ body {
     line-height: 10px;
     text-align: center;
     color: #FF6A00;
-    text-shadow: #000000;
+    text-shadow: black 3px 3px; /*색상이후 x,y 픽셀값 필요해서 넣었습니다. 효과가 불필요하시다면 none 입니다.*/
 
 
 }
@@ -215,7 +215,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url("/img/maintree.png"); /* 배경 이미지 경로 설정 */
+    background-image: url("../images/mainpage/maintree.png"); /* 배경 이미지 경로 설정 */
     background-size: cover; /* 배경 이미지를 비율 유지하며 채우기 */
     background-position: center; /* 이미지를 중앙에 배치 */
     background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
@@ -228,7 +228,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url("/img/ranklist.png");
+    background-image: url("../images/mainpage/ranklist.png");
     /* 배경 이미지를 비율 유지하며 채우기 */
     background-size: cover;
     background-position: center; /* 이미지를 중앙에 배치 */
@@ -565,7 +565,7 @@ body {
 /********************************************* BAMBOO ******************************************************************/
 
 .bamboo-body {
-    background-image : url('/img/maintree.png');
+    background-image : url("../images/mainpage/maintree.png");
     background-size : cover;
 
 }
