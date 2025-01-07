@@ -12,12 +12,11 @@
     <h1 class="maintext">오늘의 운세</h1>
     <div class="ranklist">
         <table>
-            <tr th:each="  r   : ${ranks}     ">
+            <tr th:each="  r  : ${ranks}     ">
                 <td th:text="${r.totalScore}"></td>
                 <td th:text="${r.userId}"></td>
             </tr>
         </table>
-
     </div>
     <div class="wishlist">
         <table>
