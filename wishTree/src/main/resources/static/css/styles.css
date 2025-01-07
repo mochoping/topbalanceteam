@@ -87,6 +87,9 @@ body {
     color: #777;
 }
 .navbar .logo a {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
     color: black;
     text-decoration-line: none;
 }
@@ -95,6 +98,9 @@ body {
 }
 
 .navbar .logo a:visited {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
     color: black;
     text-decoration-line: none;
 }
@@ -189,6 +195,97 @@ body {
 /****************** 아래 추가 css 작성  ***********************/
 /**************************************************************/
 
+/******************************* INDEX ********************************************/
+
+.main-container .maintext{
+    font-family: 'Sofia Sans Semi Condensed';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 70px;
+    line-height: 10px;
+    text-align: center;
+    color: #FF6A00;
+    text-shadow: #000000;
+
+
+}
+.main-container {
+    width: 500px;
+    height: 100vh; /* 화면 높이에 꽉 차도록 설정 */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("/img/maintree.png"); /* 배경 이미지 경로 설정 */
+    background-size: cover; /* 배경 이미지를 비율 유지하며 채우기 */
+    background-position: center; /* 이미지를 중앙에 배치 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
+    position: relative;
+}
+.main-container .ranklist{
+    padding: 100px;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("/img/ranklist.png");
+    /* 배경 이미지를 비율 유지하며 채우기 */
+    background-size: cover;
+    background-position: center; /* 이미지를 중앙에 배치 */
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 250px; right: -230px;
+}
+
+.main-container .ui-button{
+
+    position: absolute;
+    bottom: 190px; left: 190px;
+}
+.main-container .startgame{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    gap: 10px;
+}
+.main-container  .gotobamboo{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.main-container  .wishlist {
+    position: relative;
+}
+
+.main-container  table {
+    border-collapse: collapse;
+}
+
+.main-container .wishlist table td {
+    font-size: 8px;
+    background-color: lightgreen;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+}
+
+.main-container  .wishlist table tr:nth-child(2n-1) td { /* 홀수 tr의 td */
+    position: relative;
+    right: -100px; /* 왼쪽으로 이동 */
+}
+
+.main-container  .wishlist table tr:nth-child(2n) td { /* 짝수 tr의 td */
+    position: relative;
+    left: 340px; /* 오른쪽으로 이동 */
+}
 
 /*******************************register********************************************/
 
@@ -235,6 +332,15 @@ body {
 .radioClick:focus-within {
     color: dodgerblue;
 }
+
+.enabled {
+    color: green;
+}
+
+.unabled {
+    color: red;
+}
+
 /***************************************마이페이지***************************************/
 
 .mypage-container{
@@ -454,4 +560,210 @@ body {
 
 .balance-container .answer-options {
     margin-top: 20px;
+}
+
+/********************************************* BAMBOO ******************************************************************/
+
+.bamboo-body {
+    background-image : url('/img/maintree.png');
+    background-size : cover;
+
+}
+
+.bamboo-container {
+    width : 500px;
+    position: relative;
+
+}
+
+.bamboo-texts-division {
+    display : flex;
+}
+
+.bamboo-texts-userId {
+    font-size : 8px;
+}
+
+.bamboo-texts-commentDate {
+    font-size : 8px;
+}
+
+.bamboo-texts-comment {
+    width : 300px;
+    height : 80px;
+    background-color: lightgreen;
+    color : white;
+    padding : 10px;
+    border-radius : 30px;
+    box-shadow : 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.bamboo-container table tr:nth-child(2n) td {
+    position : relative;
+    left : 340px;
+}
+
+.bamboo-container table tr:nth-child(2n + 1) td {
+    position : relative;
+    right: 340px;
+}
+
+.bamboo-container-form input {
+    width : 350px;
+    height : 50px;
+    background-color: #f3f3f3;
+    border-color: lightgreen;
+    border-radius : 10px;
+    margin-top : 20px;
+}
+
+.bamboo-container-form input:focus {
+    background-color: #eef4ff;
+}
+
+.bamboo-container-form button {
+    width : 100px;
+    height : 50px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color : darkolivegreen;
+    border :none;
+    margin-top : 20px;
+}
+
+.bamboo-container-form button:hover {
+    cursor: pointer;
+    background-color: burlywood;
+    color : white;
+    font-weight: bold;
+    font-size : 12px;
+}
+
+/******************************************** GAMERESULT *******************************************/
+
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    background-color: hsl(41.16deg 100% 88.69% / 98%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+}
+.result-container .total-luck {
+    width: 80%;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+    margin: 20px 40px 20px 45px;
+}
+.result-container .total-luck p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.result-container a {
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.result-container a:hover {
+    color: orangered;
+}
+
+.result-container .trump {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.result-container .trump .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.result-container .trump .card img {
+    margin: 10px 0;
+    width: 80px;
+    height: 110px;
+}
+
+.result-container .trump .card span {
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.result-container .luck-sentence {
+    margin: 20px 45px 20px 45px;
+    width: 80%;
+    height: 100%;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+
+}
+
+.result-container .luck-sentence .luck-text {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding: 30px;
+}
+.result-container .lucky-menu {
+    margin: 10px 45px 10px 45px;
+    font-weight: bold;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+}
+
+.result-container .lucky-menu img {
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+}
+.result-container .lucky-menu p {
+    font-size: 20px;
+}
+
+.result-container .wishinput {
+    text-align: center;
+    margin: auto;
+}
+.result-container .wishinput input {
+    display: flex;
+    border-radius: 15px;
+    margin-right: 5px;
+    background-color: lightgray;
+    width: 350px;
+    height: 35px;
+    border: none;
+}
+.result-container .wishinput img {
+    width: 15px;
+    height: 15px;
+}
+.result-container .wishinput label {
+    display: flex;
+}
+
+.result-container .wishinput button {
+    border-radius: 10px;
+    border: 2px gray;
+}
+.result-container .luck-sentence .luck-text {
+    margin-outside: 20px;
 }
