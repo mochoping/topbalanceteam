@@ -43,6 +43,12 @@ public class IndexController {
         return "index";
     }
 
+
+    @ModelAttribute("loggedInUser")
+    public Object addLoggedInUser(HttpSession session) {
+        return session.getAttribute("loggedInUser");
+    }
+}
      // DB에 값을 집어넣을 때는 PostMapping 사용하고 엔드포인트 form action에서 작성한 주소를 엔드포인트로 지정
 //    @PostMapping("/selectranks-success") // HTTP POST 요청매핑.
 //    public String selectSuccess(@ModelAttribute("ranks") User user, Model model) {
@@ -56,9 +62,3 @@ public class IndexController {
 //        model.addAttribute("msg", "한해소망 조회완료");
 //        return "success"; //회원가입이 무사히 완료될 경우 success 페이지로 이동
 //    }
-
-    @ModelAttribute("loggedInUser")
-    public Object addLoggedInUser(HttpSession session) {
-        return session.getAttribute("loggedInUser");
-    }
-}
