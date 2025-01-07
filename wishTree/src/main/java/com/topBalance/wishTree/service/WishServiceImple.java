@@ -18,6 +18,7 @@ public class WishServiceImple implements WishService {
 
     @Override
     public List<Map<String, Object>> getSevenWish() {
+
         List<WishTree> wishList = wishMapper.getSevenWish();
         return wishList.stream().map( user -> {
             Map<String, Object> userMap = new HashMap<>();
