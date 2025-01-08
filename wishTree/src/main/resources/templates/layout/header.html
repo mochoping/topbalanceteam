@@ -1,7 +1,7 @@
 <header th:fragment="header">
     <div class="navbar">
         <div class="menu-icon" id="menuIcon" onclick="toggleMenu(true)">&#9776;</div>
-        <div class="logo"><span>BestBalance</span></div>
+        <div class="logo"><a href="/">Top Balance</a></div>
         <div class="icons">
             <span class="search-icon">&#128269;</span>
             <span class="profile-icon" th:if="${loggedInUser == null}" onclick="location.href='/login'">&#128100;</span>
@@ -13,9 +13,11 @@
         <div class="close-icon" onclick="toggleMenu(false)">&times;</div>
         <ul>
             <li><a href="/">메인화면</a></li>
-            <li><a href="#">할 말 있어요</a></li>
-            <li><a href="find-id">아이디 찾기</a></li>
-            <li><a href="find-password">비밀번호 찾기</a></li>
+            <li><a href="/balancegame">Start Game</a></li>
+            <li><a href="/bamboo">BAMBOO</a></li>
+            <li><a href="/gameresult">게임 결과</a></li>
+            <li><a th:if="${loggedInUser == null}" href="find-id">아이디 찾기</a></li>
+            <li><a th:if="${loggedInUser == null}" href="find-password">비밀번호 찾기</a></li>
             <li><a th:if="${loggedInUser == null}" href="/register">회원가입</a></li>
             <li><a th:if="${loggedInUser == null}" href="/login">로그인</a></li>
             <li><a th:if="${loggedInUser != null}" href="/mypage">마이페이지</a></li>
@@ -23,18 +25,7 @@
         </ul>
     </div>
 </header>
-<style>
 
-.navbar {    width: 500px;    display: flex;
-justify-content: space-between;    align-items: center;
-padding: 10px 16px;    background-color: white;
-border-bottom: 1px solid #ddd;    box-sizing: border-box;
-position: relative;}
-
-.side-menu {    position: absolute;    top: 0px; left: 310px;
-height: 1000px;    width: 160px;    background-color: white;
-text-decoration: none;}
-</style>
 <!--
 </div>
   <nav class="header-nav">

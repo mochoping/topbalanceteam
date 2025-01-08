@@ -2,8 +2,10 @@ package com.topBalance.wishTree.service;
 
 
 import com.topBalance.wishTree.dto.CardType;
+import com.topBalance.wishTree.dto.User;
 import com.topBalance.wishTree.mapper.TodaysLuckMapper;
 import com.topBalance.wishTree.mapper.TodaysLunchMapper;
+import com.topBalance.wishTree.mapper.UserMapper;
 import com.topBalance.wishTree.vo.GameScores;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +17,11 @@ import java.util.Map;
 public class GameResultServiceImpl implements GameResultService {
 
     @Autowired
+    private UserMapper userMapper;
+
+    @Autowired
     private TodaysLuckMapper todaysLuckMapper;
+
     @Autowired
     private TodaysLunchMapper todaysLunchMapper;
 
@@ -31,7 +37,8 @@ public class GameResultServiceImpl implements GameResultService {
     //게임 스코어 총합
     @Override
     public int totalScore(GameScores gameScores) {
-        return gameScores.getSpadeScore() + gameScores.getCloverScore() + gameScores.getHeartScore() + gameScores.getDiamondScore();
+        return gameScores.getSpadeScore() + gameScores.getCloverScore()
+                + gameScores.getHeartScore() + gameScores.getDiamondScore();
     }
 
     //트럼프카드 사진 경로 점수대로 가져오는 설정
@@ -121,7 +128,8 @@ public class GameResultServiceImpl implements GameResultService {
         allScores.put(gameScores.getHeartScore(), CardType.HEART);
         allScores.put(gameScores.getDiamondScore(), CardType.DIAMOND);
 
-        int MinValue = Math.min(Math.min(gameScores.getSpadeScore(), gameScores.getCloverScore()), Math.min(gameScores.getHeartScore(), gameScores.getDiamondScore()));
+        int MinValue = Math.min(Math.min(gameScores.getSpadeScore(), gameScores.getCloverScore()),
+                Math.min(gameScores.getHeartScore(), gameScores.getDiamondScore()));
         System.out.println("Min : " + MinValue);
         return allScores.get(MinValue);
 
@@ -145,7 +153,9 @@ public class GameResultServiceImpl implements GameResultService {
         allScores.put(gameScores.getHeartScore(), CardType.HEART);
         allScores.put(gameScores.getDiamondScore(), CardType.DIAMOND);
 
-        int MaxValue = Math.max(Math.max(gameScores.getSpadeScore(), gameScores.getCloverScore()), Math.max(gameScores.getHeartScore(), gameScores.getDiamondScore()));
+        //Math.max() 메서드는 매개변수로 주어진 숫자중 가장 큰 수를 반환
+        int MaxValue = Math.max(Math.max(gameScores.getSpadeScore(), gameScores.getCloverScore()),
+                Math.max(gameScores.getHeartScore(), gameScores.getDiamondScore()));
         System.out.println("Max : " + MaxValue);
         return allScores.get(MaxValue);
 //        Map<Integer, CardType> treemap = new TreeMap<>(new Comparator<Integer>() {
@@ -189,6 +199,11 @@ public class GameResultServiceImpl implements GameResultService {
         }
 
         return answer;
+    }
+
+    @Override
+    public void updatingTotalScore(User loggedInUser, int totalScore) {
+        userMapper.updatingTotalScore(totalScore, loggedInUser.getUserId());
     }
 
 }
