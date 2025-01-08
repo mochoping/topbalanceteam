@@ -1263,7 +1263,10 @@ top: -100px;
     }
 
     .result-container .wishinput input {
-        width: 100%;
+
+        width: 380px;
+        border-radius: 6px;
+        padding: 8px;
     }
 
     .result-container .wishinput button {
