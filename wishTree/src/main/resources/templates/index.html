@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html xml:th="http://www.thymeleaf.org" lang="ko">
+<html lang="ko" xml:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/script.js" defer></script>
+    <title>WISHTREE - MAIN</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <script defer src="/js/script.js"></script>
 </head>
 <body>
-
 <div class="main-container">
-<th:block th:replace="~{layout/header :: header}"></th:block>
+    <th:block th:replace="~{layout/header :: header}"></th:block>
     <h1 class="maintext">오늘의 운세</h1>
+    <div class="title-area">
+    </div>
+
+    <div class="tree-area">
+        <div class="wishlist">
+            <div class="circle-container">
+                <div class="circle" th:each="w : ${wishs}">
+                    <div class="moving-text">
+                        <span th:text="${w.userWish}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="ranklist">
         <table>
-            <tr th:each="  r   : ${ranks}     ">
-                <td th:text="${r.totalScore}"></td>
-                <td th:text="${r.userId}"></td>
-            </tr>
-        </table>
-
-    </div>
-    <div class="wishlist">
-        <table>
-            <tr th:each="  w   : ${wishs}     ">
-                <!--    <td th:text="${w.userId}"></td> -->
-
-                <td th:text="${w.userWish}"></td>
-                <!--   <td th:text="${w.wishDate}"></td> -->
+            <tr th:each="r : ${ranks}">
+                <td th:text="${r.totalScore + ' ' + r.userId}"></td>
             </tr>
         </table>
     </div>
@@ -36,8 +38,7 @@
         <br><br>
         <a class="gotobamboo" href="/bamboo">댓글로 이동</a>
     </div>
-
 </div>
-<th:block th:replace="~{layout/footer :: footer}"></th:block>
+
 </body>
 </html>
