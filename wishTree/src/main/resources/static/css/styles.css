@@ -170,7 +170,7 @@ body {
 
 .main-container .ranklist {
     padding: 100px;
-    width: 220px;
+    width: 210px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -956,19 +956,16 @@ top: -100px;
     }
 }
 
-
 .bamboo-container-form {
     position : absolute;
     top: 880px;
     left: 10px;
-
 }
 
 .bamboo-container-input {
     border: none;
     border-radius: 80px;
     background-color: white;
-
     width: 395px;
     height: 50px;
 }
@@ -1234,7 +1231,6 @@ top: -100px;
     }
 
     .bamboo-container .bamboo-leaf-area {
-
         flex-wrap: nowrap;
         overflow-x: scroll;
         gap: 10px;
