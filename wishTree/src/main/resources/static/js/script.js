@@ -48,3 +48,61 @@ form.addEventListener('change', (event) => {
 
 
 showQuestion(currentQuestionIndex);
+
+
+/***************************************************************************************************************/
+document.addEventListener("DOMContentLoaded", () => {
+    const circles = document.querySelectorAll(".circle");
+    const containerHeight = 500;
+    const containerWidth = 200;
+    const offset = 50;
+    const step = 60;
+    const usedPositions = [];
+
+    const firstCircle = circles[0];
+    if (firstCircle) {
+        firstCircle.style.top = `${containerHeight - 100}px`;
+        firstCircle.style.left = `calc(50% - ${offset}px)`;
+    }
+
+
+    const secondCircle = circles[1];
+    if (secondCircle) {
+        secondCircle.style.top = `${containerHeight - 100}px`;
+        secondCircle.style.left = `calc(50% + ${offset}px)`;
+    }
+
+
+    circles.forEach((circle, index) => {
+        if (index < 2) return;
+
+        let isOverlapping;
+        let top, left;
+
+        do {
+            isOverlapping = false;
+            top = Math.random() * (containerHeight - 100);
+            left = Math.random() < 0.5
+                ? `calc(50% - ${Math.random() * 80}px)`
+                : `calc(50% + ${Math.random() * 80}px)`;
+
+
+            for (let pos of usedPositions) {
+                const distance = Math.sqrt(
+                    Math.pow(pos.top - top, 2) + Math.pow(parseInt(pos.left) - parseInt(left), 2)
+                );
+                if (distance < 60) {
+                    isOverlapping = true;
+                    break;
+                }
+            }
+        } while (isOverlapping);
+
+
+        usedPositions.push({ top, left });
+
+
+        circle.style.top = `${top}px`;
+        circle.style.left = left;
+    });
+});
