@@ -572,7 +572,7 @@ body {
 
 .bamboo-container {
     width : 500px;
-    position: relative;
+    position: absolute;
 
 }
 
@@ -599,13 +599,13 @@ body {
 }
 
 .bamboo-container table tr:nth-child(2n) td {
-    position : relative;
-    left : 340px;
+    position : absolute;
+    left : 10%
 }
 
 .bamboo-container table tr:nth-child(2n + 1) td {
-    position : relative;
-    right: 340px;
+    position : absolute;
+    right: 10px;
 }
 
 .bamboo-container-form input {
