@@ -170,7 +170,7 @@ body {
 
 .main-container .ranklist {
     padding: 100px;
-    width: 120px;
+    width: 220px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -908,7 +908,7 @@ footer {
 }
 
 .bamboo-fruit:nth-child(1) {
-    top: -100px;
+top: -100px;
     left: 40px;
 }
 
@@ -957,17 +957,18 @@ footer {
     }
 }
 
+
 .bamboo-container-form {
     position : absolute;
     top: 880px;
-    left: 100px;
+    left: 8px;
 }
 
 .bamboo-container-input {
     border: none;
     border-radius: 80px;
     background-color: white;
-    width: 300px;
+    width: 400px;
     height: 50px;
 }
 

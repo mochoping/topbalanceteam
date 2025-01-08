@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db980c0b-7e03-405a-8d0d-d8adbe0851e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/WishTreeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/WishTreeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/config/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/config/DBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/controller/BalanceGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/controller/BalanceGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/dto/CardType.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/dto/CardType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/BalanceQuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/BalanceQuestionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/BambooChattingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/BambooChattingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/RankingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/RankingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/TodaysLunchMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/TodaysLunchMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/WishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/WishMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/WishTreeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/mapper/WishTreeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/BalanceQuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/BalanceQuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/BalanceQuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/BalanceQuestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/BambooChattingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/BambooChattingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/BambooChattingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/BambooChattingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/RankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/RankingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/RankingServiceImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/RankingServiceImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/WishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/WishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/WishServiceImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/WishServiceImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/WishTreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/WishTreeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/WishTreeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/service/WishTreeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/vo/GameScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/java/com/topBalance/wishTree/vo/GameScores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/mappers/Balanceq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/mappers/Balanceq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/mappers/Bamboo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/mappers/Bamboo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/mappers/RankingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/mappers/RankingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/mappers/WishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/mappers/WishMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/static/images/mainpage/maintree.png" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/static/images/mainpage/maintree.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/static/images/tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/static/images/tree.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/static/js/wishtreeUserRegExp.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/static/js/wishtreeUserRegExp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/balancegame.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/balancegame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/bamboo.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/bamboo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/error/balance-game-error.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/error/balance-game-error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/find-id-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/find-id-result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/find-id.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/find-id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/find-password-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/find-password-result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/find-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/find-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/gameresult.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/gameresult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/layout/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/layout/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/layout/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/layout/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/mypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/mypage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/register-success.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/register-success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/update-success.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/update-success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/main/resources/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/main/resources/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishTree/src/test/java/com/topBalance/wishTree/WishTreeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishTree/src/test/java/com/topBalance/wishTree/WishTreeApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sarden0302&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mochoping/topbalanceteam.git&quot;,
+    &quot;accountId&quot;: &quot;c08485b6-3e37-47ea-9e7c-35b27439593e&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2rKS9IqzfeBGC113QDsSZfw9X2i" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.WishTreeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;seongho/main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sarde/OneDrive/Desktop/topbalanceteam&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="WishTreeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="wishTree" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.topBalance.wishTree.WishTreeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db980c0b-7e03-405a-8d0d-d8adbe0851e3" name="Changes" comment="" />
+      <created>1736306120706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736306120706</updated>
+      <workItem from="1736306121794" duration="243000" />
+      <workItem from="1736306374755" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

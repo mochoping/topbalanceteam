@@ -32,7 +32,7 @@ var phoneValidation = false;
 let validationMsg = document.getElementById("validation_result");
 registerButton.disabled = true;
 let buttonResult = false;
-let form = document.getElementById("registerForm");
+let registerForm = document.getElementById("registerForm");
 
 //아이디 중복 확인 및 정규식 체크
 
@@ -171,7 +171,7 @@ function acceptSubmit(){
         &&pwValidation
         &&nameValidation
         &&phoneValidation ){
-        form.submit()
+        registerForm.submit()
         return;
     }
     validationMsg.className='unabled'

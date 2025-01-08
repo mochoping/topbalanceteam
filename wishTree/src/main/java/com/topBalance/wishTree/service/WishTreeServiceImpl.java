@@ -25,7 +25,7 @@ public class WishTreeServiceImpl implements WishTreeService{
         // wishtree를 작성한 유저가 10명인지 확인하기 위해서 list로 전체 데이터를 받는다.
         List<WishTree> wishTreeList = wishTreeMapper.getAllWishTree();
 
-        if (wishTreeList.size() == 10) {
+        if (wishTreeList.size() == 7) {
             wishTreeMapper.deleteRecentWishTree(); // 가장 처음에 작성한 wishTree 정보 삭제
         }
 
