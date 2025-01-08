@@ -18,17 +18,21 @@ const pwResult1 = document.getElementById("pw_result1");
 const pwResult2 = document.getElementById("pw_result2");
 const nameResult = document.getElementById("name_result");
 const phoneResult = document.getElementById("phone_result");
+
 const registerButton = document.getElementById("register-button");
 //폼 제출 체크포인트
+
+
 var idValidation = false;
 var pwValidation = false;
 var pwDuplicateValidation = false;;
 var nameValidation = false;
 var phoneValidation = false;
+
 let validationMsg = document.getElementById("validation_result");
 registerButton.disabled = true;
 let buttonResult = false;
-let form = document.getElementById("registerForm");
+let registerForm = document.getElementById("registerForm");
 
 //아이디 중복 확인 및 정규식 체크
 
@@ -167,7 +171,7 @@ function acceptSubmit(){
         &&pwValidation
         &&nameValidation
         &&phoneValidation ){
-        form.submit()
+        registerForm.submit()
         return;
     }
     validationMsg.className='unabled'

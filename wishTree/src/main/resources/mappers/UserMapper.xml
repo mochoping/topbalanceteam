@@ -17,27 +17,9 @@
     </select>
     <!-- 회원가입-->
     <insert id="insertUser">
-            INSERT INTO user (user_id,
-                              user_password,
-                              user_name,
-                              user_phone,
-                              user_birthdate,
-                              user_gender,
-                              ranking,
-                              total_score,
-                              game_date,
-                              daily_vist)
+            INSERT INTO user (user_id, user_password, user_name, user_phone, user_birthdate, user_gender, ranking, total_score, game_date, daily_vist)
             VALUES
-                (#{userId},
-                 #{userPassword},
-                 #{userName},
-                 #{userPhone},
-                 #{userBirthdate},
-                 #{userGender},
-                 #{ranking},
-                 #{totalScore},
-                 #{gameDate},
-                 #{dailyVisit})
+                (#{userId},#{userPassword},#{userName},#{userPhone},#{userBirthdate},#{userGender},#{ranking},#{totalScore},#{gameDate},#{dailyVisit})
     </insert>
 
     <!-- 로그인-->
@@ -51,6 +33,7 @@
 
     <!--정보수정-->
     <update id="updateUser">
+
         UPDATE user
         SET
             user_password = #{userPassword},
@@ -59,6 +42,8 @@
             user_birthdate = #{userBirthdate},
             user_gender = #{userGender}
         Where user_id = #{userId}
+
+
     </update>
 
     <!--비밀번호찾기-->

@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko" xml:th="http://www.thymeleaf.org">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>WISHTREE - MAIN</title>
+    <title>WISHTREE - LOGIN</title>
     <link href="/css/styles.css" rel="stylesheet">
     <script defer src="/js/script.js"></script>
 </head>
 <body>
-<div class="main-container">
+<!-- Main Content -->
+<div class="login-container">
+    <!-- Header -->
     <th:block th:replace="~{layout/header :: header}"></th:block>
-    <h1 class="maintext">오늘의 운세</h1>
-    <div class="title-area">
-    </div>
+    <h1>로그인</h1>
 
-    <div class="tree-area">
-        <div class="wishlist">
-            <div class="circle-container">
-                <div class="circle" th:each="w : ${wishs}">
-                    <div class="moving-text">
-                        <span th:text="${w.userWish}"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="ranklist">
-        <table>
-            <tr th:each="r : ${ranks}">
-                <td th:text="${r.totalScore + ' ' + r.userId}"></td>
-            </tr>
-        </table>
-    </div>
+    <form action="/login" class="login-content" method="post">
+        <label for="userId">아이디 : </label>
+        <input id="userId" name="userId" required type="text">
+        <br>
+        <label for="userPassword">비밀번호 : </label>
+        <input id="userPassword" name="userPassword" required type="password">
+        <!-- th != null  == fail ok  일때만 텍스트 보이게 -->
+        <p style="color: red;" th:if="${fail != null}" th:text="${fail}"></p>
+        <br>
+        <button type="submit">로그인</button>
+        <br>
+        <a href="/">메인으로 돌아가기</a>
+    </form>
 
-    <div class="ui-button">
-        <a class="startgame" href="/balancegame">게임 시작하기</a>
-        <br><br>
-        <a class="gotobamboo" href="/bamboo">댓글로 이동</a>
-    </div>
+    <!-- Footer -->
+    <th:block th:replace="~{layout/footer :: footer}"></th:block>
 </div>
-
 </body>
 </html>
