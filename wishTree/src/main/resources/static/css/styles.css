@@ -839,7 +839,6 @@ footer {
 
 /********************************************* BAMBOO ******************************************************************/
 
-
 .bamboo-container {
     width: 500px;
     min-height: 100vh;
@@ -961,14 +960,16 @@ top: -100px;
 .bamboo-container-form {
     position : absolute;
     top: 880px;
-    left: 8px;
+    left: 10px;
+
 }
 
 .bamboo-container-input {
     border: none;
     border-radius: 80px;
     background-color: white;
-    width: 400px;
+
+    width: 395px;
     height: 50px;
 }
 
