@@ -1233,6 +1233,7 @@ top: -100px;
     }
 
     .bamboo-container .bamboo-leaf-area {
+
         flex-wrap: nowrap;
         overflow-x: scroll;
         gap: 10px;
